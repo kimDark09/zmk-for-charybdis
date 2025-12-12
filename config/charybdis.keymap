@@ -40,7 +40,7 @@
             trackball-bindings = <&tsl>;
         };
 
-        /* layer_2 {
+        layer_2 {
             bindings = <
 &none  &none   &none    &none   &none         &none         &kp N1         &none         &none     &none  &none   &to 0
 &none  &none   &none    &none   &none         &none         &none         &none          &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
@@ -91,6 +91,6 @@
             >;
                 trackball-bindings = <&tmv_fine>;
                 
-        };*/
+        };
     };
 };
