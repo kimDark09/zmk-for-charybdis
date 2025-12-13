@@ -148,17 +148,6 @@
             flavor = "balanced";
         };
 
-        pm_scroll: pointing_mode_scroll {
-            compatible = "zmk,behavior-pointing-mode";
-            #binding-cells = <0>;
-            mode = <ZMK_POINTING_MODE_SCROLL>;
-        };
-
-        pm_move: pointing_mode_move {
-            compatible = "zmk,behavior-pointing-mode";
-            #binding-cells = <0>;
-            mode = <ZMK_POINTING_MODE_MOVE>;
-        };
     };
 
     keymap {
