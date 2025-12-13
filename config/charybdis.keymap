@@ -12,23 +12,6 @@
 };
 
 / {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-       device = <&trackball>;
-     input-processors = 
-              <&zip_temp_layer 1 3000>;
-    };
-
-   trackball2_listener {
-       compatible = "zmk,input-listener";
-        device = <&trackball>;
-        scroll_override {
-            layers = <2>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
-        };
-    };
-
-/ {
     combos {
         compatible = "zmk,combos";
 
