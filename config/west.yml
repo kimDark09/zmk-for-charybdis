@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/badjeff
   projects:
     - name: zmk
-      remote: badjeff
-      revision: main
+      remote: zmkfirmware
+      revision: feature-test
       import: app/west.yml
     - name: zmk-input-behavior-listener
       remote: badjeff
