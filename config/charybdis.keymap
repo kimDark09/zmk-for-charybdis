@@ -147,18 +147,6 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
-
-        pm_scroll: pointing_mode_scroll {
-            compatible = "zmk,behavior-pointing-mode";
-            #binding-cells = <0>;
-            mode = <1>;   /* POINTING_MODE_SCROLL */
-        };
-
-        pm_move: pointing_mode_move {
-            compatible = "zmk,behavior-pointing-mode";
-            #binding-cells = <0>;
-            mode = <0>;   /* POINTING_MODE_MOVE */
-        };
     };
 
     keymap {
@@ -171,7 +159,7 @@
 &kp LEFT_CONTROL    &hold LS(A) A  &hold LS(S) S  &hold LS(D) D  &hold LS(F) F       &hold LS(G) G    &hold LS(H) H  &hold LS(J) J  &hold LS(K) K          &hold LS(L) L      &hold COLON SEMI      &hold SINGLE_QUOTE ENTER
 &kp LEFT_SHIFT      &hold LS(Z) Z  &hold LS(X) X  &hold LS(C) C  &hold LS(V) V       &hold LS(B) B    &hold B N      &hold LS(M) M  &hold LS(COMMA) COMMA  &hold LS(DOT) DOT  &hold QUESTION SLASH  &kp RSHFT
                                                   &mo_to 1 1     &hold TAB LEFT_ALT  &tog 1           &kp ENTER      &lt 1 SPACE
-                                                                 &lt 2 SPACE         &lt 3 ESC        &pm_scroll
+                                                                 &lt 2 SPACE         &lt 3 ESC        &mkp LCLK
             >;
 
             trackball-bindings = <&tmv_coarse>;
