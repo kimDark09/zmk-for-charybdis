@@ -3,12 +3,30 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+       device = <&trackball>;
+     input-processors = 
+              <&zip_temp_layer 1 3000>;
+    };
+
+   trackball2_listener {
+       compatible = "zmk,input-listener";
+        device = <&trackball>;
+        scroll_override {
+            layers = <2>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+    };
 
 / {
     combos {
