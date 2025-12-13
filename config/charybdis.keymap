@@ -189,10 +189,10 @@
 
         L_mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &msc MOVE_Y(5)  &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK       &mkp RCLK  &mkp MB4  &kp LC(W)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MB4  &kp LC(W)  &trans
                         &trans  &trans  &trans    &trans     &trans
                                 &to 0   &trans    &trans
             >;
