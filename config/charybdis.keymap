@@ -185,9 +185,6 @@
                                                &trans              &trans         &trans          &trans         &kp BACKSPACE
                                                                    &trans         &trans          &none
             >;
-
-            trackball-bindings = <&tmv_scroll>;
-
         };
 
         L_mouse {
